@@ -50,6 +50,8 @@ function normilize(obInput, sort) {
         });
     }
 
+    res = res.filter(item => item.value > 0);
+
     if (sort === true) {
         res = res.sort(function(a, b) {
 
