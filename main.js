@@ -68,10 +68,10 @@ function normilize(obInput, sort) {
     return res;
 
     function Item(pId, sId, obData) {
-        this.projectId = pId;
-        this.sceneId = sId;
-        this.value = obData.value;
-        this.title = obData.title;
+        this.projectId = String(pId);
+        this.sceneId = String(sId);
+        this.value = Number(obData.value);
+        this.title = String(obData.title);
     };
 }
 
